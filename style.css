@@ -135,6 +135,10 @@ a:hover{
         width: 100px;
         text-align: center;
     }
+    .navlinks a:hover{
+        background-color: yellow;
+        height: 30px;
+    }
     .navlinks .dropdown{
         text-align: center;
         
