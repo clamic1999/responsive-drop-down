@@ -1,0 +1,158 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    
+}
+header{
+    height: 70px;
+    width: 100%;
+    position: relative;
+    background-color: blue;
+}
+nav{
+    height: 50px;
+    width: 100%;
+    position: absolute;
+}
+.logo{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    
+    top: 10px;
+    left: 15px;
+}
+img{
+    height: 50px;
+    width: 100%;
+    position: absolute;
+    border-radius: 50px;
+}
+.up{
+    top: 20px;
+    left: 100px;
+    position: absolute;
+}
+.down{
+    top: 40px;
+    left: 75px;
+    position: absolute;
+}
+.love{
+    top: 7px;
+    left: 85%;
+    position: absolute;
+    padding: 10px 15px;
+}
+.navlinks{
+    height: 60px;
+    width: 50%;
+    position: absolute;
+    top: 5px;
+    left: 30%;
+    
+}
+a{
+    top: 10px;
+    left: 20px;
+    justify-content: space-evenly;
+    display: block;
+    width: 100px;
+    text-align: center;
+    position: relative;
+    padding: 5px 15px;
+    color: rgb(8, 0, 0);
+    margin-left: 1px;
+    font-size: 20px;
+}
+
+li{
+    display: inline-flex;
+}
+
+.fas{
+    float: right;
+    margin-top: 10px;
+}
+.dropdown{
+    display: none;
+    height: 130px;
+    width: 10px;
+    text-align: center;
+    color: rgb(10, 0, 0);  
+    line-height: 2; 
+    cursor: pointer;
+    
+}
+.dropdown:hover{
+    background-color: white;
+    color: black;
+}
+.navlinks li:hover .dropdown{
+    display: block;    
+    transform: translateX(-70px) translateY(65px); 
+    height: 140px;   
+    font-size: 17px;  
+    align-items: center;
+}
+a:hover{
+    color: white;
+}
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    color: rgb(14, 1, 1);
+    top: 100%;
+    transform: translateX(100px) translateY(-40px);
+    height: 160px;
+    width: 90px;
+    background-color: white;   
+    left: -10px;
+    text-align: center; 
+    line-height: 2;
+}
+
+.navlinks .dropdown li:hover .dropdown-menu{
+    display: block;
+    
+}
+.dropdown-menu ul li{
+    display: block;
+}
+.dropdown-menu:hover{
+    color: white;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 430px){
+    header{
+        width: 98%;
+    }
+    .navlinks a{
+        top: 70px;
+        width: 100px;
+        text-align: center;
+    }
+    .navlinks .dropdown{
+        text-align: center;
+        
+        margin-top: 50px;
+        line-height: 30px;
+    }
+    .navlinks .dropdown:hover{
+        background-color: yellow;
+        width: 90px;
+    }
+    .navlinks .dropdown .dropdown-menu{
+        right: 150px;
+    }
+    .navlinks .dropdown .dropdown-menu:hover{
+        background-color: yellow;
+        width: 90px;
+    }
+    .love{
+        font-size: 15px;
+    }
+}
